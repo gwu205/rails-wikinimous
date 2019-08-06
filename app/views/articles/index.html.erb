@@ -1,5 +1,5 @@
 <ul>
   <% @articles.each do |article| %>
-    <li><p class="title"><%= article[:title] %></p><p class="description"><%= article[:content] %></p></li>
+    <li><p class="title"><%= link_to article[:title], article_path(article) %></p><p class="description"><%= article[:content] %></p></li>
   <% end %>
 </ul>

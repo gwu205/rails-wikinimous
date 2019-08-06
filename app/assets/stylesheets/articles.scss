@@ -6,9 +6,11 @@ ul {
   list-style: none;
 
   li {
-    padding-bottom: 10px;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
 
     .title {
+      font-weight: bold;
       font-size: 1.2rem;
       margin: 10px 0;
     }
@@ -18,4 +20,8 @@ ul {
       color: #444;
     }
   }
+}
+
+.icons {
+  float: right;
 }

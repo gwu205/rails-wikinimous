@@ -1,0 +1,15 @@
+<h1><%= @article[:title] %></h1>
+
+<%= link_to 'Back', root_path %>
+
+<div class="icons">
+<%= link_to edit_article_path do %>
+  <i class="far fa-edit"></i>
+<% end %>
+
+<%= link_to articles_path, method: :delete, data: { confirm: "Are you sure?" } do %>
+  <i class="far fa-trash-alt"></i>
+<% end %>
+</div>
+
+<p><%= @article[:content] %></p>

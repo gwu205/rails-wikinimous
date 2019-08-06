@@ -6,10 +6,19 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <nav >
+      <%= link_to root_path do %>
+        Wikinimous
+      <% end %>
+      <%= link_to new_article_path do %>
+        New article
+      <% end %>
+    </nav>
     <div class="container">
       <%= yield %>
     </div>

@@ -1,0 +1,16 @@
+<h1>New article</h1>
+<%= form_for(@article) do |f| %>
+  <div class="form-group">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :content %>
+    <%= f.text_area :content %>
+  </div>
+
+  <%= f.submit class: 'btn btn-submit' %>
+<% end %>
+
+<p><%= link_to 'Cancel', root_path %></p>

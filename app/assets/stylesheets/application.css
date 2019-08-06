@@ -13,18 +13,51 @@
  *= require_tree .
  *= require_self
  */
+@import url('https://cdn.jsdelivr.net/npm/inter-ui@3.7.0/inter.css');
 
 body {
-  background: #fafafa;
+  font-family: 'Inter', sans-serif;
+  background: white;
   margin: 0;
   padding: 0;
 }
 
-.container {
-  max-width: 600px;
-  width: 100%;
-  padding: 30px;
-  margin: 0 auto;
-  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+h1 {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
   background: white;
+  border-bottom: 1px solid #eee;
+  background: #fafafa;
+  /*box-shadow: 0 0 12px rgba(0,0,0,0.1);*/
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  padding: 30px 60px;
+  margin: 0 auto;
+  /*box-shadow: 0 12px 12px rgba(0,0,0,0.1);*/
+  /*background: white;*/
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #2f80ba;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #444;
 }
