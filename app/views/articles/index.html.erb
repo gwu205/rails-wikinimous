@@ -1,0 +1,5 @@
+<ul>
+  <% @articles.each do |article| %>
+    <li><p class="title"><%= article[:title] %></p><p class="description"><%= article[:content] %></p></li>
+  <% end %>
+</ul>
